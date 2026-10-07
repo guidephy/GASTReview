@@ -1,0 +1,2774 @@
+{
+  "schemaVersion": 2,
+  "units": [
+    {
+      "id": "quantum",
+      "title": "量子現象"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "blackbody",
+      "title": "黑體會吸收，也會發出輻射",
+      "topic": "熱輻射",
+      "unit": "quantum",
+      "order": 0,
+      "goal": "黑體是理想吸收體，不代表它不會發光。",
+      "body": [
+        "黑體是能完全吸收入射電磁輻射的理想物體。它不把入射光反射回來，但只要溫度高於絕對零度，仍會發出熱輻射。",
+        "固定溫度下，理想黑體的熱輻射光譜由溫度決定。空腔的小孔可近似黑體：進入的光反覆撞上內壁，最後幾乎都被吸收。"
+      ],
+      "formula": "",
+      "condition": "「黑」描述吸收性質；高溫黑體可以發出可見光。",
+      "related": [
+        "thermal",
+        "continuous"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            2
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            2
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "blackbody-1",
+          "focus": "從小孔理解",
+          "images": [
+            {
+              "path": "images/cavity.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.64,
+                0.643,
+                0.885,
+                0.78
+              ],
+              "pixels": [
+                953,
+                1367,
+                1318,
+                1658
+              ],
+              "width": 365,
+              "height": 291,
+              "alt": "空腔小孔與內壁反覆反射的示意圖"
+            }
+          ],
+          "reading": "追蹤光線進入小孔後的反射路徑；光很難再由小孔逃出，所以小孔接近完全吸收體。",
+          "question": {
+            "prompt": "為什麼空腔的小孔比單純塗黑的平面更接近黑體？",
+            "answer": "光在空腔內多次反射，最後幾乎都被內壁吸收。",
+            "explanation": "多次反射增加被吸收的機會；黑色外觀本身不能保證所有波長都完全被吸收。"
+          }
+        },
+        {
+          "id": "blackbody-2",
+          "focus": "從發光理解",
+          "images": [
+            {
+              "path": "images/cavity.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.64,
+                0.643,
+                0.885,
+                0.78
+              ],
+              "pixels": [
+                953,
+                1367,
+                1318,
+                1658
+              ],
+              "width": 365,
+              "height": 291,
+              "alt": "空腔小孔與內壁反覆反射的示意圖"
+            }
+          ],
+          "reading": "小孔不容易反射外來光，但固定溫度的空腔仍會由小孔向外發出熱輻射。",
+          "question": {
+            "prompt": "有人說「黑體吸收所有光，所以絕對不會發光」。這句話對嗎？",
+            "answer": "不對。黑體也會因自身溫度而發出熱輻射。",
+            "explanation": "吸收外來光與發出自身熱輻射是兩件事；溫度夠高時，部分輻射位於可見光範圍。"
+          }
+        },
+        {
+          "id": "blackbody-3",
+          "focus": "從理想模型理解",
+          "images": [
+            {
+              "path": "images/cavity.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.64,
+                0.643,
+                0.885,
+                0.78
+              ],
+              "pixels": [
+                953,
+                1367,
+                1318,
+                1658
+              ],
+              "width": 365,
+              "height": 291,
+              "alt": "空腔小孔與內壁反覆反射的示意圖"
+            }
+          ],
+          "reading": "這是近似黑體的實驗裝置；圖中的光線是在示意吸收過程，並非黑體只能發出這些方向的光。",
+          "question": {
+            "prompt": "相同溫度的兩個理想黑體，單位面積的熱輻射光譜會因材料不同而不同嗎？",
+            "answer": "不會；理想黑體的光譜由溫度決定。",
+            "explanation": "材料可使真實物體偏離理想黑體，但不能把材料差異當成理想黑體光譜的控制因素。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thermal",
+      "title": "溫度越高，熱輻射峰值波長越短",
+      "topic": "熱輻射",
+      "unit": "quantum",
+      "order": 1,
+      "goal": "比較不同溫度，要找曲線最高點的水平位置。",
+      "body": [
+        "物體因溫度而發出的電磁輻射稱為熱輻射，不必熱到發紅才有。黑體的輻射涵蓋一段連續波長，並非只發出一種光。",
+        "溫度升高時，黑體輻射曲線的峰值移向較短波長；單位面積的總輻射功率也增加。低溫物體的主要熱輻射常在紅外線範圍。"
+      ],
+      "formula": "",
+      "condition": "圖的橫軸是波長；不要把曲線峰值當成唯一的輻射波長。",
+      "related": [
+        "blackbody",
+        "continuous",
+        "photon"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            2
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            2
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "thermal-1",
+          "focus": "從峰值位置理解",
+          "images": [
+            {
+              "path": "images/heat-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.179,
+                0.323,
+                0.466,
+                0.451
+              ],
+              "pixels": [
+                267,
+                687,
+                694,
+                959
+              ],
+              "width": 427,
+              "height": 272,
+              "alt": "不同溫度的熱輻射曲線，橫軸為波長"
+            }
+          ],
+          "reading": "1750 K 曲線的最高點比 1000 K 更靠左；向左代表波長變短。",
+          "question": {
+            "prompt": "黑體從 1000 K 升到 1750 K，峰值波長如何變化？",
+            "answer": "變短。",
+            "explanation": "讀最高點的水平位置，不能只比較曲線高度。"
+          }
+        },
+        {
+          "id": "thermal-2",
+          "focus": "從日常現象理解",
+          "images": [
+            {
+              "path": "images/heat-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.62,
+                0.794,
+                0.897,
+                0.926
+              ],
+              "pixels": [
+                923,
+                1688,
+                1336,
+                1969
+              ],
+              "width": 413,
+              "height": 281,
+              "alt": "1000 K 至 1750 K 的黑體輻射曲線"
+            }
+          ],
+          "reading": "低溫曲線也有非零輻射；沒有可見光不代表沒有熱輻射。",
+          "question": {
+            "prompt": "室溫物體沒有發紅，是否表示它不發出熱輻射？",
+            "answer": "不是；它仍發出熱輻射，主要在紅外線。",
+            "explanation": "可見光只是電磁輻射的一部分，肉眼看不到不能當成沒有輻射。"
+          }
+        },
+        {
+          "id": "thermal-3",
+          "focus": "從分布理解",
+          "images": [
+            {
+              "path": "images/heat-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 2,
+              "box": [
+                0.228,
+                0.235,
+                0.846,
+                0.405
+              ],
+              "pixels": [
+                352,
+                510,
+                1307,
+                878
+              ],
+              "width": 955,
+              "height": 368,
+              "alt": "3000 K 至 5000 K 的黑體輻射曲線與古典預測"
+            }
+          ],
+          "reading": "比較 3000 K 與 5000 K 的實測分布，先看峰值，再看整條曲線；虛線是古典理論預測。",
+          "question": {
+            "prompt": "5000 K 的黑體是否只發出曲線峰值對應的一種波長？",
+            "answer": "不是；它發出一段連續波長的輻射。",
+            "explanation": "峰值只表示該光譜在每單位波長下最強的位置，不排除其他波長。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "planck",
+      "title": "能量量子化：交換有固定單位",
+      "topic": "量子論",
+      "unit": "quantum",
+      "order": 2,
+      "goal": "普朗克模型以 hf 為固定頻率振子的能量間距。",
+      "body": [
+        "為解釋黑體輻射，普朗克假設頻率為 f 的振子只能以 hf 的整數倍交換能量，h 是普朗克常數。能量不是任意連續改變，而是有允許的間距。",
+        "階梯比喻只幫助理解「不連續」。這裡談的是普朗克的固定頻率振子模型，不能推論所有原子的能階都等距。"
+      ],
+      "formula": "能量交換單位：ε = hf；交換量為 hf 的整數倍",
+      "condition": "頻率 f 固定才有固定的 hf；階梯不是實際運動軌跡。",
+      "related": [
+        "thermal",
+        "photon",
+        "bohr"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            2
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "planck-1",
+          "focus": "從階梯理解",
+          "images": [
+            {
+              "path": "images/stairs-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 3,
+              "box": [
+                0.137,
+                0.268,
+                0.85,
+                0.43
+              ],
+              "pixels": [
+                204,
+                570,
+                1266,
+                914
+              ],
+              "width": 1062,
+              "height": 344,
+              "alt": "連續斜坡與不連續階梯的能階比喻"
+            }
+          ],
+          "reading": "斜坡可以停在任意高度；階梯只有特定高度。圖中的階梯代表允許能量，不代表電子真的爬樓梯。",
+          "question": {
+            "prompt": "固定頻率的普朗克振子，能交換 1.5hf 的能量嗎？",
+            "answer": "不能；在此模型中交換量必須是 hf 的整數倍。",
+            "explanation": "1.5 不是整數；這是量子化條件，不是能量守恆本身。"
+          }
+        },
+        {
+          "id": "planck-2",
+          "focus": "從頻率理解",
+          "images": [
+            {
+              "path": "images/stairs-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 2,
+              "box": [
+                0.24,
+                0.739,
+                0.814,
+                0.831
+              ],
+              "pixels": [
+                371,
+                1603,
+                1258,
+                1802
+              ],
+              "width": 887,
+              "height": 199,
+              "alt": "連續斜坡與量子化階梯的對比圖"
+            }
+          ],
+          "reading": "階梯表示離散能量；實際的間距 hf 由振子頻率決定，不由圖上樓梯的尺寸決定。",
+          "question": {
+            "prompt": "振子頻率加倍時，能量交換的最小單位如何改變？",
+            "answer": "加倍。",
+            "explanation": "ε = hf，h 固定，所以 f 加倍時 hf 也加倍。"
+          }
+        },
+        {
+          "id": "planck-3",
+          "focus": "從適用範圍理解",
+          "images": [
+            {
+              "path": "images/stairs-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 3,
+              "box": [
+                0.137,
+                0.268,
+                0.85,
+                0.43
+              ],
+              "pixels": [
+                204,
+                570,
+                1266,
+                914
+              ],
+              "width": 1062,
+              "height": 344,
+              "alt": "連續斜坡與不連續階梯的能階比喻"
+            }
+          ],
+          "reading": "只用階梯理解「離散」；不要把畫得等高的階梯直接套用到氫原子能階。",
+          "question": {
+            "prompt": "由此階梯圖，能推論氫原子的所有相鄰能階間距都一樣嗎？",
+            "answer": "不能。",
+            "explanation": "固定頻率振子的等距能量模型不等於氫原子的能階結構；氫原子相鄰能階間距並不相等。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "photon",
+      "title": "單顆光子的能量由頻率決定",
+      "topic": "光子",
+      "unit": "quantum",
+      "order": 3,
+      "goal": "頻率越高，每一顆光子的能量越大。",
+      "body": [
+        "光與物質交換能量時，可用光子描述。單顆光子的能量 E = hf，f 是光的頻率、h 是普朗克常數；頻率越高，單顆能量越大。真空中也可寫成 E = hc/λ，c 是真空光速、λ 是波長。",
+        "固定頻率下，把光變亮主要是增加單位時間、單位面積到達的光子數，並不會把每顆光子的能量變大。"
+      ],
+      "formula": "E = hf = hc/λ（λ 為真空波長）",
+      "condition": "分清「單顆光子能量」與「整束光的能量」。",
+      "related": [
+        "intensity",
+        "threshold",
+        "transition"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            6
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "photon-1",
+          "focus": "從光色理解",
+          "images": [
+            {
+              "path": "images/colors-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.14,
+                0.148,
+                0.866,
+                0.331
+              ],
+              "pixels": [
+                208,
+                315,
+                1289,
+                704
+              ],
+              "width": 1081,
+              "height": 389,
+              "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.10 eV"
+            }
+          ],
+          "reading": "紅、綠、紫光標示不同的單顆能量；這張圖使用同一金屬，不能把光色當成所有金屬的固定門檻。",
+          "question": {
+            "prompt": "紅光和紫光相比，哪一種的單顆光子能量較大？",
+            "answer": "紫光。",
+            "explanation": "紫光頻率較高；E = hf，所以單顆光子能量較大。"
+          }
+        },
+        {
+          "id": "photon-2",
+          "focus": "從能量封包理解",
+          "images": [
+            {
+              "path": "images/photons-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 4,
+              "box": [
+                0.565,
+                0.49,
+                0.849,
+                0.671
+              ],
+              "pixels": [
+                873,
+                1063,
+                1312,
+                1455
+              ],
+              "width": 439,
+              "height": 392,
+              "alt": "標有 E = hf 的光子能量封包示意"
+            }
+          ],
+          "reading": "每個光子是一次能量交換的封包；圖中的橢圓不是光子的實際形狀或大小。",
+          "question": {
+            "prompt": "同頻率光束亮度加倍，單顆光子的能量會加倍嗎？",
+            "answer": "不會。",
+            "explanation": "頻率沒變，所以 hf 沒變；增加的是到達的光子數率。"
+          }
+        },
+        {
+          "id": "photon-3",
+          "focus": "從波長理解",
+          "images": [
+            {
+              "path": "images/colors-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 7,
+              "box": [
+                0.09,
+                0.341,
+                0.909,
+                0.562
+              ],
+              "pixels": [
+                134,
+                725,
+                1354,
+                1195
+              ],
+              "width": 1220,
+              "height": 470,
+              "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.1 eV"
+            }
+          ],
+          "reading": "紫光的波長較短、頻率較高。圖中標示的 eV 是能量單位，不是電壓。",
+          "question": {
+            "prompt": "真空波長從 λ 變成 λ/2 時，單顆光子能量如何改變？",
+            "answer": "變成兩倍。",
+            "explanation": "E = hc/λ，h 與 c 固定，所以波長減半時能量加倍。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "threshold",
+      "title": "臨界頻率：先看單顆能量夠不夠",
+      "topic": "光電效應",
+      "unit": "quantum",
+      "order": 4,
+      "goal": "單顆光子能量未達逸出功，再亮也無法補足。",
+      "body": [
+        "金屬電子逸出表面所需的最小能量稱為逸出功 W。單光子光電效應中，電子吸收一顆光子；只有 hf 至少達到 W，才達到逸出門檻。",
+        "臨界頻率 f₀ = W/h，h 是普朗克常數，門檻由金屬表面特性決定。f < f₀ 時，加強光或延長照射都不能靠低能量光子累積而逸出；f = f₀ 是最大動能為零的理想門檻。"
+      ],
+      "formula": "f₀ = W/h；hf < W 時無單光子光電效應",
+      "condition": "限普通低光強的單光子模型；「達到門檻」不等於有明顯可測電流。",
+      "related": [
+        "photon",
+        "intensity",
+        "kinetic"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            5,
+            7
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            3,
+            5
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "threshold-1",
+          "focus": "從未達門檻理解",
+          "images": [
+            {
+              "path": "images/threshold-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 4,
+              "box": [
+                0.128,
+                0.546,
+                0.272,
+                0.642
+              ],
+              "pixels": [
+                191,
+                1161,
+                405,
+                1365
+              ],
+              "width": 214,
+              "height": 204,
+              "alt": "頻率低於臨界頻率時沒有光電子"
+            }
+          ],
+          "reading": "f < f_c 時沒有光電子。原圖用 f_c，本站用 f₀，兩者都是臨界頻率。",
+          "question": {
+            "prompt": "頻率低於臨界頻率，把光強增加十倍能使電子逸出嗎？",
+            "answer": "不能（在單光子模型下）。",
+            "explanation": "單顆光子的 hf 仍小於 W；變多的光子沒有提高每顆的能量。"
+          }
+        },
+        {
+          "id": "threshold-2",
+          "focus": "從不同金屬理解",
+          "images": [
+            {
+              "path": "images/threshold-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 5,
+              "box": [
+                0.105,
+                0.697,
+                0.906,
+                0.82
+              ],
+              "pixels": [
+                156,
+                1482,
+                1349,
+                1743
+              ],
+              "width": 1193,
+              "height": 261,
+              "alt": "不同頻率照射逸出功 2.00 eV 的金屬"
+            }
+          ],
+          "reading": "圖例金屬的 W = 2.00 eV；換金屬就可能換門檻。橙光「恰有」表示理想臨界狀態。",
+          "question": {
+            "prompt": "金屬甲的逸出功比乙大，哪一個臨界頻率較高？",
+            "answer": "甲較高。",
+            "explanation": "f₀ = W/h，而 h 是相同的常數。"
+          }
+        },
+        {
+          "id": "threshold-3",
+          "focus": "從臨界狀態理解",
+          "images": [
+            {
+              "path": "images/colors-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.14,
+                0.148,
+                0.866,
+                0.331
+              ],
+              "pixels": [
+                208,
+                315,
+                1289,
+                704
+              ],
+              "width": 1081,
+              "height": 389,
+              "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.10 eV"
+            }
+          ],
+          "reading": "銫的 W = 2.10 eV；紅光約 1.77 eV 不足，綠光約 2.25 eV 已超過門檻。",
+          "question": {
+            "prompt": "若光子能量恰好等於逸出功，光電子最大動能是多少？",
+            "answer": "零。",
+            "explanation": "能量恰好用於克服束縛，沒有多餘能量作為動能；這是理想門檻。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "intensity",
+      "title": "光越強，逸出的電子通常越多",
+      "topic": "光電效應",
+      "unit": "quantum",
+      "order": 5,
+      "goal": "固定頻率且超過門檻時，光強影響電子數率。",
+      "body": [
+        "在同一金屬、相同照射面積，且頻率已高於臨界頻率時，增加光強會增加每秒到達的光子數，因而通常使每秒逸出的電子較多。",
+        "當電子能被充分收集時，飽和光電流隨光強增加。頻率固定，所以單顆光子能量和光電子最大動能仍不變。"
+      ],
+      "formula": "",
+      "condition": "比較時固定頻率、金屬與收集條件；光強和頻率不能混為一談。",
+      "related": [
+        "threshold",
+        "photon",
+        "kinetic"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "intensity-1",
+          "focus": "從電子數理解",
+          "images": [
+            {
+              "path": "images/current-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 4,
+              "box": [
+                0.129,
+                0.817,
+                0.272,
+                0.933
+              ],
+              "pixels": [
+                192,
+                1737,
+                405,
+                1984
+              ],
+              "width": 213,
+              "height": 247,
+              "alt": "頻率達標且光較強時，逸出的電子較多"
+            }
+          ],
+          "reading": "多條入射光線與較多電子箭頭表示數率增加；箭頭數是示意，不能當成一顆光子必定打出一顆電子。",
+          "question": {
+            "prompt": "同一達標頻率下，光強增加時，每秒逸出電子數通常如何改變？",
+            "answer": "增加。",
+            "explanation": "每秒入射的光子較多，能造成的電子逸出事件通常也較多。"
+          }
+        },
+        {
+          "id": "intensity-2",
+          "focus": "從電流理解",
+          "images": [
+            {
+              "path": "images/current-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.104,
+                0.17,
+                0.459,
+                0.279
+              ],
+              "pixels": [
+                155,
+                361,
+                683,
+                593
+              ],
+              "width": 528,
+              "height": 232,
+              "alt": "較強的同頻率綠光使更多電子逸出"
+            }
+          ],
+          "reading": "同頻率的綠光變強，圖中逸出電子較多。光電流反映每秒被收集的電荷量。",
+          "question": {
+            "prompt": "收集充分且其他條件不變，光強加倍，飽和光電流在理想模型下如何改變？",
+            "answer": "約加倍。",
+            "explanation": "固定頻率時，光子數率與光強成正比；收集充分時，電流也隨電子數率成正比。"
+          }
+        },
+        {
+          "id": "intensity-3",
+          "focus": "從單顆能量理解",
+          "images": [
+            {
+              "path": "images/current-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.104,
+                0.17,
+                0.459,
+                0.279
+              ],
+              "pixels": [
+                155,
+                361,
+                683,
+                593
+              ],
+              "width": 528,
+              "height": 232,
+              "alt": "較強的同頻率綠光使更多電子逸出"
+            }
+          ],
+          "reading": "這張圖只表示更多電子逸出；不能根據光線較多就推論每顆電子更快。",
+          "question": {
+            "prompt": "頻率固定、光強增加，光電子最大動能會跟著增加嗎？",
+            "answer": "不會。",
+            "explanation": "K_max = hf − W 中的 f 與 W 都未改變；增加的是電子數率。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kinetic",
+      "title": "光電子最大動能＝光子能量減逸出功",
+      "topic": "光電效應",
+      "unit": "quantum",
+      "order": 6,
+      "goal": "先付出逸出功，剩餘能量才是最大動能。",
+      "body": [
+        "一顆光子的 hf 被電子吸收後，至少要用 W 克服金屬束縛。光電子能帶走的最大動能為 K_max = hf − W，f 是入射光頻率、h 是普朗克常數。",
+        "同一金屬且頻率高於門檻時，提高頻率可提高最大動能。實際逸出的電子可能有能量損失，因此不是每顆電子都具有 K_max。"
+      ],
+      "formula": "K_max = hf − W（hf ≥ W）",
+      "condition": "只討論離開表面時的最大動能；hf < W 的負值表示無法逸出。",
+      "related": [
+        "threshold",
+        "photon",
+        "intensity"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            6,
+            7
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "kinetic-1",
+          "focus": "從能量帳本理解",
+          "images": [
+            {
+              "path": "images/colors-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.14,
+                0.148,
+                0.866,
+                0.331
+              ],
+              "pixels": [
+                208,
+                315,
+                1289,
+                704
+              ],
+              "width": 1081,
+              "height": 389,
+              "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.10 eV"
+            }
+          ],
+          "reading": "綠光約 2.25 eV、紫光約 3.10 eV，金屬逸出功為 2.10 eV；分別扣掉同一個 W。",
+          "question": {
+            "prompt": "依圖示，2.25 eV 的綠光照射 W = 2.10 eV 金屬，最大動能為多少？",
+            "answer": "約 0.15 eV。",
+            "explanation": "K_max = 2.25 − 2.10 = 0.15 eV；此值是上限，不是所有電子的相同動能。"
+          }
+        },
+        {
+          "id": "kinetic-2",
+          "focus": "從頻率理解",
+          "images": [
+            {
+              "path": "images/speed-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.488,
+                0.181,
+                0.9,
+                0.279
+              ],
+              "pixels": [
+                727,
+                385,
+                1340,
+                593
+              ],
+              "width": 613,
+              "height": 208,
+              "alt": "綠光與紫光照射同一金屬的電子動能比較"
+            }
+          ],
+          "reading": "紫光頻率較高；在同一金屬上扣掉相同逸出功後，紫光電子的最大動能較大。",
+          "question": {
+            "prompt": "同一金屬上，達標的入射頻率提高時，最大動能如何改變？",
+            "answer": "增加。",
+            "explanation": "W 固定而 hf 增加，所以 hf − W 增加。"
+          }
+        },
+        {
+          "id": "kinetic-3",
+          "focus": "從公式範圍理解",
+          "images": [
+            {
+              "path": "images/photo-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 5,
+              "box": [
+                0.249,
+                0.477,
+                0.848,
+                0.617
+              ],
+              "pixels": [
+                385,
+                1035,
+                1310,
+                1338
+              ],
+              "width": 925,
+              "height": 303,
+              "alt": "光子被吸收後電子離開金屬表面的示意圖"
+            }
+          ],
+          "reading": "入射光子的能量先用來克服束縛；若不足以逸出，就不會有圖中離開表面的電子。",
+          "question": {
+            "prompt": "計算 hf − W 得到 −0.5 eV，是否表示電子以負動能逸出？",
+            "answer": "不是；表示此光子不足以使電子逸出。",
+            "explanation": "動能不能是負值；當 hf < W，不能把逸出公式當成已發生光電效應。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "immediate",
+      "title": "光電效應不靠電子慢慢累積光能",
+      "topic": "光電效應",
+      "unit": "quantum",
+      "order": 7,
+      "goal": "吸收一顆足夠能量的光子即可逸出。",
+      "body": [
+        "頻率高於門檻時，電子吸收一顆能量足夠的光子，就可很快逸出，不需要先連續照射來累積能量。這是光電效應支持光子模型的重要特徵。",
+        "弱光代表光子到達較稀少，所以逸出事件或電流較少；它不代表每顆電子吸收光子後都要慢慢等能量湊足。"
+      ],
+      "formula": "",
+      "condition": "分清「等待光子到達」與「吸收後累積能量」；不宣稱延遲嚴格為零。",
+      "related": [
+        "threshold",
+        "intensity",
+        "photon"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            4,
+            6
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "immediate-1",
+          "focus": "從單次事件理解",
+          "images": [
+            {
+              "path": "images/photo-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 4,
+              "box": [
+                0.708,
+                0.229,
+                0.912,
+                0.323
+              ],
+              "pixels": [
+                1054,
+                487,
+                1358,
+                687
+              ],
+              "width": 304,
+              "height": 200,
+              "alt": "光照射金屬表面而逸出光電子"
+            }
+          ],
+          "reading": "箭頭表示光子作用後電子逸出；圖是過程示意，不是可以量出時間的快照。",
+          "question": {
+            "prompt": "達標的弱光下，電子必須累積很多顆光子的能量才逸出嗎？",
+            "answer": "不必；吸收一顆足夠能量的光子即可。",
+            "explanation": "光電效應的單光子模型不靠電子長時間連續收集光能。"
+          }
+        },
+        {
+          "id": "immediate-2",
+          "focus": "從弱光理解",
+          "images": [
+            {
+              "path": "images/photo-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 5,
+              "box": [
+                0.15,
+                0.316,
+                0.462,
+                0.475
+              ],
+              "pixels": [
+                223,
+                672,
+                688,
+                1010
+              ],
+              "width": 465,
+              "height": 338,
+              "alt": "照射金屬板使電子逸出的示意圖"
+            }
+          ],
+          "reading": "弱光時發生事件較少，但對已吸收足夠能量光子的電子，不需要額外的能量累積時間。",
+          "question": {
+            "prompt": "把達標頻率的光變弱，是否使每次吸收後的逸出過程變成漫長累積？",
+            "answer": "不會。",
+            "explanation": "主要變化是光子到達與電子逸出事件變少；不是每顆電子的能量取得變慢。"
+          }
+        },
+        {
+          "id": "immediate-3",
+          "focus": "從等待的原因理解",
+          "images": [
+            {
+              "path": "images/photo-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 5,
+              "box": [
+                0.249,
+                0.477,
+                0.848,
+                0.617
+              ],
+              "pixels": [
+                385,
+                1035,
+                1310,
+                1338
+              ],
+              "width": 925,
+              "height": 303,
+              "alt": "光子被吸收後電子離開金屬表面的示意圖"
+            }
+          ],
+          "reading": "圖中光子作用前後的兩個狀態，是一次吸收與逸出；沒有畫出能量慢慢堆積。",
+          "question": {
+            "prompt": "極弱光下等待很久才偵測到一個電子，是否足以證明電子在累積光能？",
+            "answer": "不足以。",
+            "explanation": "可能只是光子到達稀少或未被吸收、電子未被收集；需區分事件間隔與單次吸收後的作用過程。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "duality",
+      "title": "光的波粒二象性由不同實驗呈現",
+      "topic": "波粒二象性",
+      "unit": "quantum",
+      "order": 8,
+      "goal": "干涉看波動分布，光電效應看光子能量交換。",
+      "body": [
+        "光的干涉與繞射需要波動描述；光電效應中的能量門檻與單次交換則需要光子描述。只把光當成古典波或古典小球，都不足以解釋全部結果。",
+        "波粒二象性不是光在途中切換成兩種物質，也不是一半光是波、一半光是粒子；它描述同一量子對象在不同測量中呈現的特徵。"
+      ],
+      "formula": "",
+      "condition": "圖中的波線與小球是描述工具，不是光的實際外形。",
+      "related": [
+        "photon",
+        "interference",
+        "diffraction"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            8,
+            11
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "duality-1",
+          "focus": "從干涉理解",
+          "images": [
+            {
+              "path": "images/light-double-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 13,
+              "box": [
+                0.19,
+                0.107,
+                0.529,
+                0.243
+              ],
+              "pixels": [
+                294,
+                232,
+                817,
+                527
+              ],
+              "width": 523,
+              "height": 295,
+              "alt": "光的雙狹縫干涉裝置與明暗條紋"
+            }
+          ],
+          "reading": "雙狹縫後的明暗條紋表示波動的相長、相消；單靠古典小球直線路徑無法說明。",
+          "question": {
+            "prompt": "光的雙狹縫干涉條紋主要顯示哪一種特徵？",
+            "answer": "波動性。",
+            "explanation": "條紋的強弱分布可由波動疊加解釋；這不否定光以光子交換能量。"
+          }
+        },
+        {
+          "id": "duality-2",
+          "focus": "從光電效應理解",
+          "images": [
+            {
+              "path": "images/colors-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 6,
+              "box": [
+                0.14,
+                0.148,
+                0.866,
+                0.331
+              ],
+              "pixels": [
+                208,
+                315,
+                1289,
+                704
+              ],
+              "width": 1081,
+              "height": 389,
+              "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.10 eV"
+            }
+          ],
+          "reading": "單顆光子的能量要達到逸出功，才能使電子逸出；這是光子描述的關鍵。",
+          "question": {
+            "prompt": "為何光電效應中存在臨界頻率，支持光子模型？",
+            "answer": "因為能量以 hf 的封包交換，單顆能量必須足夠。",
+            "explanation": "連續累積光能的古典說法無法解釋低頻光再強也未達單光子逸出門檻。"
+          }
+        },
+        {
+          "id": "duality-3",
+          "focus": "從兩種證據理解",
+          "images": [
+            {
+              "path": "images/light-double-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 13,
+              "box": [
+                0.19,
+                0.107,
+                0.529,
+                0.243
+              ],
+              "pixels": [
+                294,
+                232,
+                817,
+                527
+              ],
+              "width": 523,
+              "height": 295,
+              "alt": "光的雙狹縫干涉裝置與明暗條紋"
+            }
+          ],
+          "reading": "此圖顯示波動分布；要理解光電效應，還要用同一束光的光子能量描述。",
+          "question": {
+            "prompt": "波粒二象性是否表示光束中一半是波、一半是小球？",
+            "answer": "不是。",
+            "explanation": "它是同一量子對象在不同實驗呈現的波動與粒子特徵，不能拆成兩類物質。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "matter",
+      "title": "物質波：電子也有波動性",
+      "topic": "物質的波動性",
+      "unit": "quantum",
+      "order": 9,
+      "goal": "物質波描述量子機率振幅，不是電子發出的電磁波。",
+      "body": [
+        "德布羅意提出：電子等物質粒子也具有波動性，可用物質波描述。電子的干涉、繞射圖樣提供了實驗證據。",
+        "物質波不是把電子畫成一條蛇形路徑，也不是電子發出的一束光。波動描述與粒子被偵測到的位置分布有關；通常將它稱為機率波。"
+      ],
+      "formula": "",
+      "condition": "「機率波」是簡稱；出現機率取決於機率振幅絕對值的平方。",
+      "related": [
+        "diffraction",
+        "interference",
+        "duality"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "matter-1",
+          "focus": "從圖像理解",
+          "images": [
+            {
+              "path": "images/matter-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 14,
+              "box": [
+                0.464,
+                0.189,
+                0.911,
+                0.361
+              ],
+              "pixels": [
+                691,
+                402,
+                1356,
+                767
+              ],
+              "width": 665,
+              "height": 365,
+              "alt": "古典粒子圖像與物質波圖像的對比"
+            }
+          ],
+          "reading": "圖中的波線只是波動描述；藍球沒有真的沿著圖中的波線蛇行。",
+          "question": {
+            "prompt": "物質波是否表示電子實際走過的軌跡是一條正弦波？",
+            "answer": "不是。",
+            "explanation": "波動描述的是量子機率振幅，不是電子的古典運動軌跡。"
+          }
+        },
+        {
+          "id": "matter-2",
+          "focus": "從分類理解",
+          "images": [
+            {
+              "path": "images/diff-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 10,
+              "box": [
+                0.143,
+                0.563,
+                0.876,
+                0.718
+              ],
+              "pixels": [
+                213,
+                1197,
+                1304,
+                1526
+              ],
+              "width": 1091,
+              "height": 329,
+              "alt": "X 射線與電子通過鋁箔所得的繞射圖樣"
+            }
+          ],
+          "reading": "左邊是 X 射線這種電磁波；右邊是電子的物質波。相似圖樣不代表它們是同一種波。",
+          "question": {
+            "prompt": "X 射線與電子都能繞射，所以 X 射線也是物質波嗎？",
+            "answer": "不是；X 射線是電磁波。",
+            "explanation": "電子是物質粒子，其波動描述稱物質波；相似實驗圖樣不改變波的分類。"
+          }
+        },
+        {
+          "id": "matter-3",
+          "focus": "從實驗證據理解",
+          "images": [
+            {
+              "path": "images/diff-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 12,
+              "box": [
+                0.166,
+                0.643,
+                0.881,
+                0.797
+              ],
+              "pixels": [
+                256,
+                1395,
+                1361,
+                1729
+              ],
+              "width": 1105,
+              "height": 334,
+              "alt": "X 射線與電子束的鋁箔繞射圖樣"
+            }
+          ],
+          "reading": "電子束出現明暗環紋，支持電子波動性；不是金屬把電子變成光。",
+          "question": {
+            "prompt": "電子的波動性只有理論猜想，沒有實驗證據嗎？",
+            "answer": "不是；電子繞射與干涉都是證據。",
+            "explanation": "具有相長與相消分布的圖樣支持物質波描述，不能只把電子當古典小球。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "diffraction",
+      "title": "電子繞射是物質波的實驗證據",
+      "topic": "物質的波動性",
+      "unit": "quantum",
+      "order": 10,
+      "goal": "有結構的明暗分布，顯示電子具有波動性。",
+      "body": [
+        "電子束通過薄箔或晶體後，可以形成規律的明暗繞射圖樣。這類分布需要電子的波動描述，支持德布羅意的物質波假說。",
+        "講義比較電子與 X 射線照射鋁箔的圖樣：兩者都能繞射，但 X 射線是電磁波，電子所對應的是物質波。"
+      ],
+      "formula": "",
+      "condition": "這是鋁箔多晶的環狀圖樣；不同晶體或幾何條件不一定形成圓環。",
+      "related": [
+        "matter",
+        "interference"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            10
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            14
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "diffraction-1",
+          "focus": "從環紋理解",
+          "images": [
+            {
+              "path": "images/diff-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 10,
+              "box": [
+                0.143,
+                0.563,
+                0.876,
+                0.718
+              ],
+              "pixels": [
+                213,
+                1197,
+                1304,
+                1526
+              ],
+              "width": 1091,
+              "height": 329,
+              "alt": "X 射線與電子通過鋁箔所得的繞射圖樣"
+            }
+          ],
+          "reading": "比較兩張明暗環紋；物理證據在規律的分布，不只是電子到達螢幕。",
+          "question": {
+            "prompt": "電子繞射圖樣支持電子的哪一項性質？",
+            "answer": "波動性。",
+            "explanation": "波動的相長、相消可形成明暗繞射結構；單純偵測到電子只能說明它有到達。"
+          }
+        },
+        {
+          "id": "diffraction-2",
+          "focus": "從對照實驗理解",
+          "images": [
+            {
+              "path": "images/diff-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 14,
+              "box": [
+                0.132,
+                0.569,
+                0.883,
+                0.827
+              ],
+              "pixels": [
+                197,
+                1210,
+                1315,
+                1758
+              ],
+              "width": 1118,
+              "height": 548,
+              "alt": "鋁箔在 X 射線與電子束照射下的繞射圖樣"
+            }
+          ],
+          "reading": "X 射線與電子束在鋁箔後都有相似環紋，讓已知的波動現象成為對照。",
+          "question": {
+            "prompt": "為什麼講義把電子繞射與 X 射線繞射並列？",
+            "answer": "用已知的波動繞射現象，對照電子也呈現波動圖樣。",
+            "explanation": "不是證明電子是 X 射線，而是支持電子具有波動性。"
+          }
+        },
+        {
+          "id": "diffraction-3",
+          "focus": "從證據界線理解",
+          "images": [
+            {
+              "path": "images/diff-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 12,
+              "box": [
+                0.166,
+                0.643,
+                0.881,
+                0.797
+              ],
+              "pixels": [
+                256,
+                1395,
+                1361,
+                1729
+              ],
+              "width": 1105,
+              "height": 334,
+              "alt": "X 射線與電子束的鋁箔繞射圖樣"
+            }
+          ],
+          "reading": "圓環是此實驗裝置的圖樣，不能推論所有電子都沿圓周飛行。",
+          "question": {
+            "prompt": "螢幕上出現圓環，是否表示每顆電子的飛行軌跡都是圓形？",
+            "answer": "不是。",
+            "explanation": "環紋是大量偵測位置的分布，不能當成電子從光源到螢幕的實際路徑。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "title": "逐點偵測，也能累積出電子干涉條紋",
+      "topic": "波粒二象性",
+      "unit": "quantum",
+      "order": 11,
+      "goal": "一次偵測是一個點，多次結果形成有規律的分布。",
+      "body": [
+        "在不取得電子通過哪條狹縫的資訊、並維持適當相干條件時，雙狹縫後的電子可一點一點被偵測。大量事件累積後，位置分布呈現干涉條紋。",
+        "局部的偵測點顯示粒子式事件；整體干涉分布顯示波動性。即使電子依序送出，分布也不必由不同電子互相碰撞才能形成。"
+      ],
+      "formula": "",
+      "condition": "圖是累積偵測結果；單次偵測不會在整個螢幕畫出一條亮紋。",
+      "related": [
+        "matter",
+        "duality",
+        "diffraction"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            11
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "interference-1",
+          "focus": "從累積過程理解",
+          "images": [
+            {
+              "path": "images/dots-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 11,
+              "box": [
+                0.127,
+                0.617,
+                0.842,
+                0.667
+              ],
+              "pixels": [
+                189,
+                1312,
+                1254,
+                1418
+              ],
+              "width": 1065,
+              "height": 106,
+              "alt": "電子偵測點由稀疏逐漸累積成干涉條紋"
+            }
+          ],
+          "reading": "由左到右看點數增加；條紋不是某一顆電子留下的一整條痕跡。",
+          "question": {
+            "prompt": "單次偵測一顆電子，螢幕上會出現完整干涉條紋嗎？",
+            "answer": "不會；通常是一個局部偵測點。",
+            "explanation": "干涉條紋是許多次偵測的位置分布，不是單次事件的形狀。"
+          }
+        },
+        {
+          "id": "interference-2",
+          "focus": "從兩種特徵理解",
+          "images": [
+            {
+              "path": "images/dots-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 16,
+              "box": [
+                0.116,
+                0.742,
+                0.9,
+                0.797
+              ],
+              "pixels": [
+                173,
+                1577,
+                1340,
+                1694
+              ],
+              "width": 1167,
+              "height": 117,
+              "alt": "雙狹縫螢幕上逐漸累積的電子偵測點"
+            }
+          ],
+          "reading": "每個小點是一次偵測，最後的明暗條紋是累積的機率分布。",
+          "question": {
+            "prompt": "點狀偵測與最後的干涉條紋，分別呈現什麼特徵？",
+            "answer": "局部點狀事件呈現粒子性；干涉分布呈現波動性。",
+            "explanation": "這兩種特徵在不同層次描述同一實驗，不互相排斥。"
+          }
+        },
+        {
+          "id": "interference-3",
+          "focus": "從實驗條件理解",
+          "images": [
+            {
+              "path": "images/electron-double-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 13,
+              "box": [
+                0.54,
+                0.107,
+                0.874,
+                0.243
+              ],
+              "pixels": [
+                834,
+                232,
+                1350,
+                527
+              ],
+              "width": 516,
+              "height": 295,
+              "alt": "電子雙狹縫裝置與螢幕干涉條紋"
+            }
+          ],
+          "reading": "看雙狹縫後的明暗分布；圖沒有測量電子實際通過哪條狹縫。",
+          "question": {
+            "prompt": "若能取得每顆電子通過哪條狹縫的資訊，還能直接沿用這張干涉圖的結論嗎？",
+            "answer": "不能直接沿用；路徑資訊會破壞兩路徑間的干涉。",
+            "explanation": "干涉需要適當相干條件，不能忽略測量裝置對實驗的改變。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "continuous",
+      "title": "連續光譜：色帶中有連續波長",
+      "topic": "原子光譜",
+      "unit": "quantum",
+      "order": 12,
+      "goal": "連續光譜不是只有幾條孤立的亮線。",
+      "body": [
+        "光譜是把光依波長或頻率分開後的分布。白熾燈燈絲等熱光源可在可見範圍形成連續色帶，表示一段連續波長都有輻射。",
+        "連續只描述波長分布，不表示每一種波長同樣強。三稜鏡使不同波長偏折不同，將原來混合的光展開。"
+      ],
+      "formula": "",
+      "condition": "「白光」不必然連續；此卡以白熾燈這類熱光源為例。",
+      "related": [
+        "thermal",
+        "emission",
+        "absorption"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            18
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "continuous-1",
+          "focus": "從色帶理解",
+          "images": [
+            {
+              "path": "images/continuous-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 16,
+              "box": [
+                0.26,
+                0.395,
+                0.847,
+                0.455
+              ],
+              "pixels": [
+                387,
+                840,
+                1261,
+                967
+              ],
+              "width": 874,
+              "height": 127,
+              "alt": "白熾燈光經三稜鏡形成連續色帶"
+            }
+          ],
+          "reading": "白熾燈發出的混合光經三稜鏡分開後，形成沒有孤立間隔的色帶。",
+          "question": {
+            "prompt": "白熾燈的光譜是一段色帶，還是只有幾條孤立亮線？",
+            "answer": "是一段連續色帶。",
+            "explanation": "熱光源提供一段连續波长，不同於稀薄原子氣體的線光譜。"
+          }
+        },
+        {
+          "id": "continuous-2",
+          "focus": "從強度理解",
+          "images": [
+            {
+              "path": "images/heat-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 2,
+              "box": [
+                0.62,
+                0.794,
+                0.897,
+                0.926
+              ],
+              "pixels": [
+                923,
+                1688,
+                1336,
+                1969
+              ],
+              "width": 413,
+              "height": 281,
+              "alt": "1000 K 至 1750 K 的黑體輻射曲線"
+            }
+          ],
+          "reading": "這張輻射曲線連續但高度不一；連續波長不代表各波長的輻射強度相同。",
+          "question": {
+            "prompt": "連續光譜是否表示每一種波長的強度都一樣？",
+            "answer": "不是。",
+            "explanation": "曲線可隨波長改變強度；連續是波長分布的性質，不是平坦的強度分布。"
+          }
+        },
+        {
+          "id": "continuous-3",
+          "focus": "從三稜鏡理解",
+          "images": [
+            {
+              "path": "images/continuous-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 18,
+              "box": [
+                0.264,
+                0.351,
+                0.565,
+                0.445
+              ],
+              "pixels": [
+                408,
+                761,
+                873,
+                965
+              ],
+              "width": 465,
+              "height": 204,
+              "alt": "白熾光源經三稜鏡形成連續光譜"
+            }
+          ],
+          "reading": "三稜鏡把不同波長的光分開；它並不是從沒有的光色創造新的波長。",
+          "question": {
+            "prompt": "三稜鏡是否把原本單一波長的白熾燈光創造成很多波長？",
+            "answer": "不是；它分開原本已混合的不同波長。",
+            "explanation": "白熾燈光本來就含多種波長；色散只是讓它們沿不同方向傳播。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "emission",
+      "title": "發射線光譜：氣體只在特定波長發亮",
+      "topic": "原子光譜",
+      "unit": "quantum",
+      "order": 13,
+      "goal": "受激稀薄原子氣體發出特定波長的亮線。",
+      "body": [
+        "低密度原子氣體受到加熱或放電激發後，可以發出特定波長的光。經分光後，黑暗背景上出現一條條亮線，稱為發射線光譜。",
+        "亮線對應原子由較高能階回到較低能階時放出的光子；不同能階差形成不同波長，不是所有波長都能同樣發射。"
+      ],
+      "formula": "",
+      "condition": "本卡談稀薄原子氣體的線光譜；不是所有發光物體都只產生亮線。",
+      "related": [
+        "transition",
+        "fingerprint",
+        "absorption"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            18,
+            20
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "emission-1",
+          "focus": "從亮線理解",
+          "images": [
+            {
+              "path": "images/emission-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 16,
+              "box": [
+                0.154,
+                0.527,
+                0.847,
+                0.61
+              ],
+              "pixels": [
+                229,
+                1120,
+                1261,
+                1297
+              ],
+              "width": 1032,
+              "height": 177,
+              "alt": "受激氣體經三稜鏡形成黑底亮線"
+            }
+          ],
+          "reading": "注意黑底上只有特定位置有亮線；不是一整條連續彩虹色帶。",
+          "question": {
+            "prompt": "稀薄受激原子氣體的典型發射光譜，是連續色帶還是特定亮線？",
+            "answer": "特定亮線。",
+            "explanation": "原子能階離散，只能由允許的能階差放出對應波長的光子。"
+          }
+        },
+        {
+          "id": "emission-2",
+          "focus": "從產生條件理解",
+          "images": [
+            {
+              "path": "images/emission-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 22,
+              "box": [
+                0.302,
+                0.143,
+                0.597,
+                0.259
+              ],
+              "pixels": [
+                450,
+                304,
+                889,
+                551
+              ],
+              "width": 439,
+              "height": 247,
+              "alt": "高溫低密度氣體的發射光譜實驗"
+            }
+          ],
+          "reading": "光由高溫、低密度氣體本身發出，再經狹縫與三稜鏡分開。",
+          "question": {
+            "prompt": "圖中發射光譜的光，是氣體自己發出，還是一定要有白光穿過氣體？",
+            "answer": "氣體自己發出。",
+            "explanation": "受激原子回到較低能階時發光；白光穿過較冷氣體是吸收光譜的典型裝置。"
+          }
+        },
+        {
+          "id": "emission-3",
+          "focus": "從能量方向理解",
+          "images": [
+            {
+              "path": "images/emission-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 18,
+              "box": [
+                0.264,
+                0.481,
+                0.565,
+                0.575
+              ],
+              "pixels": [
+                408,
+                1043,
+                873,
+                1247
+              ],
+              "width": 465,
+              "height": 204,
+              "alt": "高溫稀薄氣體的發射光譜實驗"
+            }
+          ],
+          "reading": "氣體的特定光色在分光後成為亮線；光子的能量來自原子能量降低。",
+          "question": {
+            "prompt": "原子放出一顆光子時，原子的能量增加還是減少？",
+            "answer": "減少。",
+            "explanation": "原子失去光子帶走的能量，從較高能階降到較低能階。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "absorption",
+      "title": "吸收線光譜：特定波長從背景中變弱",
+      "topic": "原子光譜",
+      "unit": "quantum",
+      "order": 14,
+      "goal": "連續背景上出現暗線，是特定波長被吸收。",
+      "body": [
+        "連續光通過較冷的稀薄氣體時，某些波長的光子可被原子吸收，使原子到達較高能階。沿觀測方向的這些波長強度降低，形成吸收暗線。",
+        "同種原子的同一對能階，吸收與發射所需的能量差相同，所以對應暗線與亮線位於相同波長；但兩種譜線不保證每條都同樣明顯。"
+      ],
+      "formula": "",
+      "condition": "暗線代表相對較弱，不一定是完全沒有光；要有背景光作比較。",
+      "related": [
+        "emission",
+        "transition",
+        "fingerprint"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            16
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            22
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "absorption-1",
+          "focus": "從暗線理解",
+          "images": [
+            {
+              "path": "images/absorption-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 16,
+              "box": [
+                0.248,
+                0.457,
+                0.847,
+                0.527
+              ],
+              "pixels": [
+                369,
+                972,
+                1261,
+                1120
+              ],
+              "width": 892,
+              "height": 148,
+              "alt": "白光經過氣體形成連續背景上的暗線"
+            }
+          ],
+          "reading": "彩色背景仍存在，只有部分波長變暗；要與下方氣體發射亮線的位置比較。",
+          "question": {
+            "prompt": "吸收光譜中的暗線表示什麼？",
+            "answer": "該波長沿觀測方向的光相對較弱。",
+            "explanation": "氣體吸收特定波長的光子；暗線不是氣體另外發出黑色光。"
+          }
+        },
+        {
+          "id": "absorption-2",
+          "focus": "從位置對照理解",
+          "images": [
+            {
+              "path": "images/absorption-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 22,
+              "box": [
+                0.255,
+                0.37,
+                0.91,
+                0.524
+              ],
+              "pixels": [
+                380,
+                787,
+                1355,
+                1114
+              ],
+              "width": 975,
+              "height": 327,
+              "alt": "白光通過低溫稀薄氣體及亮暗線位置對照"
+            }
+          ],
+          "reading": "右側用相同波長刻度比較氫的暗線與亮線；相同位置對應相同能階差。",
+          "question": {
+            "prompt": "同種原子、同一對能階的吸收線與發射線，波長相同嗎？",
+            "answer": "相同。",
+            "explanation": "向上吸收與向下發射的能量差相同，所以 hf 相同，波長也相同。"
+          }
+        },
+        {
+          "id": "absorption-3",
+          "focus": "從背景光理解",
+          "images": [
+            {
+              "path": "images/absorption-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 18,
+              "box": [
+                0.264,
+                0.608,
+                0.565,
+                0.707
+              ],
+              "pixels": [
+                408,
+                1319,
+                873,
+                1533
+              ],
+              "width": 465,
+              "height": 214,
+              "alt": "白光穿過低溫氣體形成吸收光譜"
+            }
+          ],
+          "reading": "先有連續光，再通過較冷氣體；三稜鏡顯示哪些波長相對減弱。",
+          "question": {
+            "prompt": "只看冷氣體、沒有背後的光源，能沿用圖中的吸收暗線形成方式嗎？",
+            "answer": "不能；此方式需要背景光穿過氣體。",
+            "explanation": "吸收暗線是相對於背景光的缺損，不是沒有光源時氣體自行畫出的黑線。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fingerprint",
+      "title": "譜線位置組合可辨認元素",
+      "topic": "原子光譜",
+      "unit": "quantum",
+      "order": 15,
+      "goal": "辨認元素，比對一組譜線比只看顏色可靠。",
+      "body": [
+        "不同元素有不同的原子能階結構，因此譜線的波長組合具有辨識性。觀測未知樣品的光譜，再比對已知元素的多條特徵譜線，可推斷成分。",
+        "不能只靠整體顏色或一條碰巧相近的線判定。讀圖時要先確認波長刻度方向，再比對各條線的位置；亮度還受溫度與含量等條件影響。"
+      ],
+      "formula": "",
+      "condition": "此卡以原子譜線辨識為主；只憑線強弱不能直接判定含量。",
+      "related": [
+        "emission",
+        "absorption",
+        "bohr"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            22
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "fingerprint-1",
+          "focus": "從位置組合理解",
+          "images": [
+            {
+              "path": "images/finger-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 16,
+              "box": [
+                0.154,
+                0.682,
+                0.847,
+                0.795
+              ],
+              "pixels": [
+                229,
+                1450,
+                1261,
+                1690
+              ],
+              "width": 1032,
+              "height": 240,
+              "alt": "氫、汞、氖的發射譜線與波長刻度"
+            }
+          ],
+          "reading": "氫 H、汞 Hg、氖 Ne 的線數與位置組合不同；先沿波長刻度比較。",
+          "question": {
+            "prompt": "未知氣體看起來紅色，能否只憑顏色確定它是哪個元素？",
+            "answer": "不能。",
+            "explanation": "多種氣體可能有相近的整體顏色；應比對多條特徵譜線的波長。"
+          }
+        },
+        {
+          "id": "fingerprint-2",
+          "focus": "從坐標方向理解",
+          "images": [
+            {
+              "path": "images/finger-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 22,
+              "box": [
+                0.603,
+                0.151,
+                0.899,
+                0.236
+              ],
+              "pixels": [
+                898,
+                321,
+                1339,
+                502
+              ],
+              "width": 441,
+              "height": 181,
+              "alt": "氫、汞、氖的發射譜線與波長刻度"
+            }
+          ],
+          "reading": "這張圖的 700 nm 在左、400 nm 在右，與有些圖相反；辨認位置前先看刻度。",
+          "question": {
+            "prompt": "為什麼比對兩張光譜圖，不能直接用「左邊的線」作判斷？",
+            "answer": "因為兩張圖的波長軸方向或尺度可能不同。",
+            "explanation": "必須比對實際波長，不能只比圖上的左右位置。"
+          }
+        },
+        {
+          "id": "fingerprint-3",
+          "focus": "從亮暗互補理解",
+          "images": [
+            {
+              "path": "images/finger-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 19,
+              "box": [
+                0.235,
+                0.18,
+                0.823,
+                0.276
+              ],
+              "pixels": [
+                363,
+                390,
+                1272,
+                599
+              ],
+              "width": 909,
+              "height": 209,
+              "alt": "氫、氮、氖的亮線光譜與暗線光譜對照"
+            }
+          ],
+          "reading": "圖中是氫、氮、氖；亮線與暗線可提供同一元素的對照。",
+          "question": {
+            "prompt": "觀測恆星光譜中的多條吸收暗線，能用來判斷哪些元素存在嗎？",
+            "answer": "可以。",
+            "explanation": "把暗線波長與已知原子特徵譜線比對，可推斷吸收氣體的元素組成。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bohr",
+      "title": "波耳定態：氫原子只允許特定能量",
+      "topic": "原子能階",
+      "unit": "quantum",
+      "order": 16,
+      "goal": "在波耳模型中，電子處於定態不連續失能。",
+      "body": [
+        "波耳為解釋氫原子穩定性與線光譜，假設電子只可處在特定的定態，各自對應一個能階；在定態中不持續放出電磁輻射。",
+        "最低能量的束縛態稱為基態，較高的束縛態稱激發態。這是早期模型；現代量子力學不把電子描述成沿固定圓形軌跡繞核的小球。"
+      ],
+      "formula": "",
+      "condition": "主要以氫原子為例；圖的軌道是歷史模型，圖形不按比例。",
+      "related": [
+        "transition",
+        "planck",
+        "balmer"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            22,
+            23
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "bohr-1",
+          "focus": "從能階理解",
+          "images": [
+            {
+              "path": "images/levels-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 20,
+              "box": [
+                0.546,
+                0.266,
+                0.835,
+                0.382
+              ],
+              "pixels": [
+                844,
+                577,
+                1290,
+                829
+              ],
+              "width": 446,
+              "height": 252,
+              "alt": "氫原子基態、激發態與游離能階的示意圖"
+            }
+          ],
+          "reading": "n = 1 是最低能量；越接近 0 eV 能量越高。負數不是「不可能的能量」，而是相對游離基準的束縛能量。",
+          "question": {
+            "prompt": "氫原子的 −13.6 eV 與 −3.4 eV，哪一個能量較低？",
+            "answer": "−13.6 eV 較低，是基態。",
+            "explanation": "在相同零點下比較數值：−13.6 小於 −3.4；不能把絕對值較大誤認為能量較高。"
+          }
+        },
+        {
+          "id": "bohr-2",
+          "focus": "從定態理解",
+          "images": [
+            {
+              "path": "images/orbits-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 20,
+              "box": [
+                0.151,
+                0.275,
+                0.47,
+                0.405
+              ],
+              "pixels": [
+                233,
+                596,
+                726,
+                878
+              ],
+              "width": 493,
+              "height": 282,
+              "alt": "波耳模型的 n = 1、2、3 定態軌道示意"
+            }
+          ],
+          "reading": "只允許特定半徑是波耳模型的假設，不是電子可以任意選擇一條圓形軌道。",
+          "question": {
+            "prompt": "依波耳假設，電子停留在定態時會一直輻射而掉入原子核嗎？",
+            "answer": "不會。",
+            "explanation": "定態不持續輻射是模型假設；能量交換發生在狀態改變時。"
+          }
+        },
+        {
+          "id": "bohr-3",
+          "focus": "從模型界線理解",
+          "images": [
+            {
+              "path": "images/orbits-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 20,
+              "box": [
+                0.151,
+                0.275,
+                0.47,
+                0.405
+              ],
+              "pixels": [
+                233,
+                596,
+                726,
+                878
+              ],
+              "width": 493,
+              "height": 282,
+              "alt": "波耳模型的 n = 1、2、3 定態軌道示意"
+            }
+          ],
+          "reading": "這是歷史上的圓軌道模型，幫助連結能階；不能當成現代電子路徑的照片。",
+          "question": {
+            "prompt": "能把圖上的圓圈當作現代量子力學已確認的電子固定飛行軌跡嗎？",
+            "answer": "不能。",
+            "explanation": "波耳圓軌道是早期模型，現代量子描述用電子狀態與機率分布。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "transition",
+      "title": "躍遷光子的能量等於能階差",
+      "topic": "原子能階",
+      "unit": "quantum",
+      "order": 17,
+      "goal": "下降發光、上升吸光；光子能量看兩端的差。",
+      "body": [
+        "在以光子造成的束縛能階躍遷中，原子向較低能階轉變時放出光子；吸收匹配能階差的光子時，可轉變到較高能階。",
+        "光子能量是較高與較低能階的差，不是任一能階本身的值。差越大，光子頻率越高、真空波長越短。"
+      ],
+      "formula": "hf = E_high − E_low = hc/λ（h：普朗克常數；f：光頻率；c：真空光速；λ：真空波長）",
+      "condition": "此卡談允許的束縛態光學躍遷；不是任意光子能量都會被吸收。",
+      "related": [
+        "photon",
+        "bohr",
+        "emission",
+        "absorption"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "transition-1",
+          "focus": "從箭頭理解",
+          "images": [
+            {
+              "path": "images/transition-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 23,
+              "box": [
+                0.123,
+                0.735,
+                0.876,
+                0.894
+              ],
+              "pixels": [
+                183,
+                1563,
+                1304,
+                1901
+              ],
+              "width": 1121,
+              "height": 338,
+              "alt": "電子吸收光子上升與放出光子下降的對照"
+            }
+          ],
+          "reading": "左圖吸收後到較高能階，右圖放出光子後到較低能階；光子的能量都是 E₂ − E₁。",
+          "question": {
+            "prompt": "原子從 E_high 下降到 E_low，放出的光子能量是 E_high 還是兩能階之差？",
+            "answer": "是 E_high − E_low。",
+            "explanation": "能量守恆要比較轉變前後；原子下降後仍保有 E_low，不能把全部 E_high 當成光子能量。"
+          }
+        },
+        {
+          "id": "transition-2",
+          "focus": "從吸收理解",
+          "images": [
+            {
+              "path": "images/transition-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 20,
+              "box": [
+                0.193,
+                0.601,
+                0.847,
+                0.682
+              ],
+              "pixels": [
+                298,
+                1304,
+                1309,
+                1479
+              ],
+              "width": 1011,
+              "height": 175,
+              "alt": "低能階吸收與高能階發射的躍遷箭頭"
+            }
+          ],
+          "reading": "左側吸收向上，右側發射向下；圖中箭頭標示狀態改變，不代表能量連續掃過所有中間值。",
+          "question": {
+            "prompt": "兩個允許能階相差 2.0 eV，以單光子吸收作此躍遷，需要多大光子能量？",
+            "answer": "2.0 eV。",
+            "explanation": "吸收光子能量須匹配該躍遷能階差；不是光越亮就能用不匹配的光子取代。"
+          }
+        },
+        {
+          "id": "transition-3",
+          "focus": "從負能量理解",
+          "images": [
+            {
+              "path": "images/levels-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 20,
+              "box": [
+                0.546,
+                0.266,
+                0.835,
+                0.382
+              ],
+              "pixels": [
+                844,
+                577,
+                1290,
+                829
+              ],
+              "width": 446,
+              "height": 252,
+              "alt": "氫原子基態、激發態與游離能階的示意圖"
+            }
+          ],
+          "reading": "氫的 E₂ = −3.4 eV、E₁ = −13.6 eV；先做相減，再判斷放出的光子能量。",
+          "question": {
+            "prompt": "氫原子由 −3.4 eV 躍遷到 −13.6 eV，放出光子的能量是多少？",
+            "answer": "10.2 eV。",
+            "explanation": "E_high − E_low = −3.4 − (−13.6) = 10.2 eV；光子能量為正。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "balmer",
+      "title": "巴耳末系的共同終點是第 2 能階",
+      "topic": "氫原子光譜",
+      "unit": "quantum",
+      "order": 18,
+      "goal": "常見四條可見氫譜線來自 n = 3、4、5、6 → 2。",
+      "body": [
+        "氫原子由 n ≥ 3 的較高能階躍遷到 n = 2 時，形成巴耳末系。常見四條可見線約為 656、486、434、410 nm，對應 n = 3、4、5、6 → 2。",
+        "起點越高而終點同為 n = 2，能階差越大，放出的光子波長越短。巴耳末系還有更多譜線延伸到紫外線附近，不是只有這四條。"
+      ],
+      "formula": "",
+      "condition": "巴耳末／巴爾末為同一系列；躍遷到 n = 1 屬萊曼系，不是巴耳末系。",
+      "related": [
+        "transition",
+        "bohr",
+        "emission"
+      ],
+      "sources": [
+        {
+          "version": "LIGHT",
+          "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+          "pages": [
+            18
+          ]
+        },
+        {
+          "version": "SUPER",
+          "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+          "pages": [
+            23
+          ]
+        },
+        {
+          "version": "無敵",
+          "pdf": "無敵講義第6 章 量子現象.pdf",
+          "pages": [
+            18,
+            20
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "id": "balmer-1",
+          "focus": "從躍遷終點理解",
+          "images": [
+            {
+              "path": "images/balmer-l.png",
+              "version": "LIGHT",
+              "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+              "page": 18,
+              "box": [
+                0.17,
+                0.181,
+                0.831,
+                0.451
+              ],
+              "pixels": [
+                253,
+                385,
+                1237,
+                959
+              ],
+              "width": 984,
+              "height": 574,
+              "alt": "n = 3 至 6 躍遷到 n = 2 的可見譜線"
+            }
+          ],
+          "reading": "四個箭頭都終止於 n = 2；不要把內側的 n = 1 當成終點。",
+          "question": {
+            "prompt": "圖中常見四條可見氫譜線，共同終止在哪一個能階？",
+            "answer": "n = 2。",
+            "explanation": "n = 3、4、5、6 到 n = 2 的不同能階差形成四條常見可見線。"
+          }
+        },
+        {
+          "id": "balmer-2",
+          "focus": "從譜線理解",
+          "images": [
+            {
+              "path": "images/balmer-s.png",
+              "version": "SUPER",
+              "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+              "page": 23,
+              "box": [
+                0.441,
+                0.452,
+                0.83,
+                0.499
+              ],
+              "pixels": [
+                657,
+                961,
+                1236,
+                1061
+              ],
+              "width": 579,
+              "height": 100,
+              "alt": "656、486、434、410 nm 的氫原子譜線色帶"
+            }
+          ],
+          "reading": "色帶上的 656 nm 波長最長，410 nm 在此四條中最短。",
+          "question": {
+            "prompt": "656 nm 與 410 nm 相比，哪一條光子的能量較大？",
+            "answer": "410 nm。",
+            "explanation": "E = hc/λ，波長較短代表能量較大；不能用色帶在圖上寬窄判斷。"
+          }
+        },
+        {
+          "id": "balmer-3",
+          "focus": "從系列範圍理解",
+          "images": [
+            {
+              "path": "images/balmer-i.png",
+              "version": "無敵",
+              "pdf": "無敵講義第6 章 量子現象.pdf",
+              "page": 18,
+              "box": [
+                0.551,
+                0.852,
+                0.867,
+                0.921
+              ],
+              "pixels": [
+                851,
+                1848,
+                1340,
+                1998
+              ],
+              "width": 489,
+              "height": 150,
+              "alt": "氫原子約 410、434、486、656 nm 的譜線"
+            }
+          ],
+          "reading": "四條可見線不是整個系列；巴耳末系以共同終點 n = 2 定義。",
+          "question": {
+            "prompt": "是否所有氫原子放出的光都是可見光，且只有圖中四種波長？",
+            "answer": "不是。",
+            "explanation": "氫有其他系列，也有更多巴耳末譜線；四條圖示只是常見可見線。"
+          }
+        }
+      ]
+    }
+  ],
+  "externalReferences": [
+    {
+      "title": "OpenStax：Blackbody Radiation",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation"
+    },
+    {
+      "title": "OpenStax：Photoelectric Effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect"
+    },
+    {
+      "title": "OpenStax：Bohr’s Model of the Hydrogen Atom",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-4-bohrs-model-of-the-hydrogen-atom"
+    },
+    {
+      "title": "OpenStax：De Broglie’s Matter Waves",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves"
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "cavity": {
+    "path": "images/cavity.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 2,
+    "box": [
+      0.64,
+      0.643,
+      0.885,
+      0.78
+    ],
+    "pixels": [
+      953,
+      1367,
+      1318,
+      1658
+    ],
+    "width": 365,
+    "height": 291,
+    "alt": "空腔小孔與內壁反覆反射的示意圖"
+  },
+  "heat-l": {
+    "path": "images/heat-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 2,
+    "box": [
+      0.179,
+      0.323,
+      0.466,
+      0.451
+    ],
+    "pixels": [
+      267,
+      687,
+      694,
+      959
+    ],
+    "width": 427,
+    "height": 272,
+    "alt": "不同溫度的熱輻射曲線，橫軸為波長"
+  },
+  "heat-s": {
+    "path": "images/heat-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 2,
+    "box": [
+      0.62,
+      0.794,
+      0.897,
+      0.926
+    ],
+    "pixels": [
+      923,
+      1688,
+      1336,
+      1969
+    ],
+    "width": 413,
+    "height": 281,
+    "alt": "1000 K 至 1750 K 的黑體輻射曲線"
+  },
+  "heat-i": {
+    "path": "images/heat-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 2,
+    "box": [
+      0.228,
+      0.235,
+      0.846,
+      0.405
+    ],
+    "pixels": [
+      352,
+      510,
+      1307,
+      878
+    ],
+    "width": 955,
+    "height": 368,
+    "alt": "3000 K 至 5000 K 的黑體輻射曲線與古典預測"
+  },
+  "stairs-s": {
+    "path": "images/stairs-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 3,
+    "box": [
+      0.137,
+      0.268,
+      0.85,
+      0.43
+    ],
+    "pixels": [
+      204,
+      570,
+      1266,
+      914
+    ],
+    "width": 1062,
+    "height": 344,
+    "alt": "連續斜坡與不連續階梯的能階比喻"
+  },
+  "stairs-i": {
+    "path": "images/stairs-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 2,
+    "box": [
+      0.24,
+      0.739,
+      0.814,
+      0.831
+    ],
+    "pixels": [
+      371,
+      1603,
+      1258,
+      1802
+    ],
+    "width": 887,
+    "height": 199,
+    "alt": "連續斜坡與量子化階梯的對比圖"
+  },
+  "photo-l": {
+    "path": "images/photo-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 4,
+    "box": [
+      0.708,
+      0.229,
+      0.912,
+      0.323
+    ],
+    "pixels": [
+      1054,
+      487,
+      1358,
+      687
+    ],
+    "width": 304,
+    "height": 200,
+    "alt": "光照射金屬表面而逸出光電子"
+  },
+  "photo-s": {
+    "path": "images/photo-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 5,
+    "box": [
+      0.15,
+      0.316,
+      0.462,
+      0.475
+    ],
+    "pixels": [
+      223,
+      672,
+      688,
+      1010
+    ],
+    "width": 465,
+    "height": 338,
+    "alt": "照射金屬板使電子逸出的示意圖"
+  },
+  "photo-i": {
+    "path": "images/photo-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 5,
+    "box": [
+      0.249,
+      0.477,
+      0.848,
+      0.617
+    ],
+    "pixels": [
+      385,
+      1035,
+      1310,
+      1338
+    ],
+    "width": 925,
+    "height": 303,
+    "alt": "光子被吸收後電子離開金屬表面的示意圖"
+  },
+  "colors-l": {
+    "path": "images/colors-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 6,
+    "box": [
+      0.14,
+      0.148,
+      0.866,
+      0.331
+    ],
+    "pixels": [
+      208,
+      315,
+      1289,
+      704
+    ],
+    "width": 1081,
+    "height": 389,
+    "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.10 eV"
+  },
+  "colors-s": {
+    "path": "images/colors-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 7,
+    "box": [
+      0.09,
+      0.341,
+      0.909,
+      0.562
+    ],
+    "pixels": [
+      134,
+      725,
+      1354,
+      1195
+    ],
+    "width": 1220,
+    "height": 470,
+    "alt": "紅、綠、紫光照射同一銫金屬，逸出功為 2.1 eV"
+  },
+  "photons-i": {
+    "path": "images/photons-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 4,
+    "box": [
+      0.565,
+      0.49,
+      0.849,
+      0.671
+    ],
+    "pixels": [
+      873,
+      1063,
+      1312,
+      1455
+    ],
+    "width": 439,
+    "height": 392,
+    "alt": "標有 E = hf 的光子能量封包示意"
+  },
+  "threshold-l": {
+    "path": "images/threshold-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 4,
+    "box": [
+      0.128,
+      0.546,
+      0.272,
+      0.642
+    ],
+    "pixels": [
+      191,
+      1161,
+      405,
+      1365
+    ],
+    "width": 214,
+    "height": 204,
+    "alt": "頻率低於臨界頻率時沒有光電子"
+  },
+  "threshold-s": {
+    "path": "images/threshold-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 5,
+    "box": [
+      0.105,
+      0.697,
+      0.906,
+      0.82
+    ],
+    "pixels": [
+      156,
+      1482,
+      1349,
+      1743
+    ],
+    "width": 1193,
+    "height": 261,
+    "alt": "不同頻率照射逸出功 2.00 eV 的金屬"
+  },
+  "current-l": {
+    "path": "images/current-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 4,
+    "box": [
+      0.129,
+      0.817,
+      0.272,
+      0.933
+    ],
+    "pixels": [
+      192,
+      1737,
+      405,
+      1984
+    ],
+    "width": 213,
+    "height": 247,
+    "alt": "頻率達標且光較強時，逸出的電子較多"
+  },
+  "current-s": {
+    "path": "images/current-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 6,
+    "box": [
+      0.104,
+      0.17,
+      0.459,
+      0.279
+    ],
+    "pixels": [
+      155,
+      361,
+      683,
+      593
+    ],
+    "width": 528,
+    "height": 232,
+    "alt": "較強的同頻率綠光使更多電子逸出"
+  },
+  "speed-s": {
+    "path": "images/speed-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 6,
+    "box": [
+      0.488,
+      0.181,
+      0.9,
+      0.279
+    ],
+    "pixels": [
+      727,
+      385,
+      1340,
+      593
+    ],
+    "width": 613,
+    "height": 208,
+    "alt": "綠光與紫光照射同一金屬的電子動能比較"
+  },
+  "light-double-i": {
+    "path": "images/light-double-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 13,
+    "box": [
+      0.19,
+      0.107,
+      0.529,
+      0.243
+    ],
+    "pixels": [
+      294,
+      232,
+      817,
+      527
+    ],
+    "width": 523,
+    "height": 295,
+    "alt": "光的雙狹縫干涉裝置與明暗條紋"
+  },
+  "matter-s": {
+    "path": "images/matter-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 14,
+    "box": [
+      0.464,
+      0.189,
+      0.911,
+      0.361
+    ],
+    "pixels": [
+      691,
+      402,
+      1356,
+      767
+    ],
+    "width": 665,
+    "height": 365,
+    "alt": "古典粒子圖像與物質波圖像的對比"
+  },
+  "diff-l": {
+    "path": "images/diff-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 10,
+    "box": [
+      0.143,
+      0.563,
+      0.876,
+      0.718
+    ],
+    "pixels": [
+      213,
+      1197,
+      1304,
+      1526
+    ],
+    "width": 1091,
+    "height": 329,
+    "alt": "X 射線與電子通過鋁箔所得的繞射圖樣"
+  },
+  "diff-s": {
+    "path": "images/diff-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 14,
+    "box": [
+      0.132,
+      0.569,
+      0.883,
+      0.827
+    ],
+    "pixels": [
+      197,
+      1210,
+      1315,
+      1758
+    ],
+    "width": 1118,
+    "height": 548,
+    "alt": "鋁箔在 X 射線與電子束照射下的繞射圖樣"
+  },
+  "diff-i": {
+    "path": "images/diff-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 12,
+    "box": [
+      0.166,
+      0.643,
+      0.881,
+      0.797
+    ],
+    "pixels": [
+      256,
+      1395,
+      1361,
+      1729
+    ],
+    "width": 1105,
+    "height": 334,
+    "alt": "X 射線與電子束的鋁箔繞射圖樣"
+  },
+  "dots-l": {
+    "path": "images/dots-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 11,
+    "box": [
+      0.127,
+      0.617,
+      0.842,
+      0.667
+    ],
+    "pixels": [
+      189,
+      1312,
+      1254,
+      1418
+    ],
+    "width": 1065,
+    "height": 106,
+    "alt": "電子偵測點由稀疏逐漸累積成干涉條紋"
+  },
+  "dots-s": {
+    "path": "images/dots-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 16,
+    "box": [
+      0.116,
+      0.742,
+      0.9,
+      0.797
+    ],
+    "pixels": [
+      173,
+      1577,
+      1340,
+      1694
+    ],
+    "width": 1167,
+    "height": 117,
+    "alt": "雙狹縫螢幕上逐漸累積的電子偵測點"
+  },
+  "electron-double-i": {
+    "path": "images/electron-double-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 13,
+    "box": [
+      0.54,
+      0.107,
+      0.874,
+      0.243
+    ],
+    "pixels": [
+      834,
+      232,
+      1350,
+      527
+    ],
+    "width": 516,
+    "height": 295,
+    "alt": "電子雙狹縫裝置與螢幕干涉條紋"
+  },
+  "continuous-l": {
+    "path": "images/continuous-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 16,
+    "box": [
+      0.26,
+      0.395,
+      0.847,
+      0.455
+    ],
+    "pixels": [
+      387,
+      840,
+      1261,
+      967
+    ],
+    "width": 874,
+    "height": 127,
+    "alt": "白熾燈光經三稜鏡形成連續色帶"
+  },
+  "continuous-i": {
+    "path": "images/continuous-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 18,
+    "box": [
+      0.264,
+      0.351,
+      0.565,
+      0.445
+    ],
+    "pixels": [
+      408,
+      761,
+      873,
+      965
+    ],
+    "width": 465,
+    "height": 204,
+    "alt": "白熾光源經三稜鏡形成連續光譜"
+  },
+  "emission-l": {
+    "path": "images/emission-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 16,
+    "box": [
+      0.154,
+      0.527,
+      0.847,
+      0.61
+    ],
+    "pixels": [
+      229,
+      1120,
+      1261,
+      1297
+    ],
+    "width": 1032,
+    "height": 177,
+    "alt": "受激氣體經三稜鏡形成黑底亮線"
+  },
+  "emission-s": {
+    "path": "images/emission-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 22,
+    "box": [
+      0.302,
+      0.143,
+      0.597,
+      0.259
+    ],
+    "pixels": [
+      450,
+      304,
+      889,
+      551
+    ],
+    "width": 439,
+    "height": 247,
+    "alt": "高溫低密度氣體的發射光譜實驗"
+  },
+  "emission-i": {
+    "path": "images/emission-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 18,
+    "box": [
+      0.264,
+      0.481,
+      0.565,
+      0.575
+    ],
+    "pixels": [
+      408,
+      1043,
+      873,
+      1247
+    ],
+    "width": 465,
+    "height": 204,
+    "alt": "高溫稀薄氣體的發射光譜實驗"
+  },
+  "absorption-l": {
+    "path": "images/absorption-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 16,
+    "box": [
+      0.248,
+      0.457,
+      0.847,
+      0.527
+    ],
+    "pixels": [
+      369,
+      972,
+      1261,
+      1120
+    ],
+    "width": 892,
+    "height": 148,
+    "alt": "白光經過氣體形成連續背景上的暗線"
+  },
+  "absorption-s": {
+    "path": "images/absorption-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 22,
+    "box": [
+      0.255,
+      0.37,
+      0.91,
+      0.524
+    ],
+    "pixels": [
+      380,
+      787,
+      1355,
+      1114
+    ],
+    "width": 975,
+    "height": 327,
+    "alt": "白光通過低溫稀薄氣體及亮暗線位置對照"
+  },
+  "absorption-i": {
+    "path": "images/absorption-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 18,
+    "box": [
+      0.264,
+      0.608,
+      0.565,
+      0.707
+    ],
+    "pixels": [
+      408,
+      1319,
+      873,
+      1533
+    ],
+    "width": 465,
+    "height": 214,
+    "alt": "白光穿過低溫氣體形成吸收光譜"
+  },
+  "finger-l": {
+    "path": "images/finger-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 16,
+    "box": [
+      0.154,
+      0.682,
+      0.847,
+      0.795
+    ],
+    "pixels": [
+      229,
+      1450,
+      1261,
+      1690
+    ],
+    "width": 1032,
+    "height": 240,
+    "alt": "氫、汞、氖的發射譜線與波長刻度"
+  },
+  "finger-s": {
+    "path": "images/finger-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 22,
+    "box": [
+      0.603,
+      0.151,
+      0.899,
+      0.236
+    ],
+    "pixels": [
+      898,
+      321,
+      1339,
+      502
+    ],
+    "width": 441,
+    "height": 181,
+    "alt": "氫、汞、氖的發射譜線與波長刻度"
+  },
+  "finger-i": {
+    "path": "images/finger-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 19,
+    "box": [
+      0.235,
+      0.18,
+      0.823,
+      0.276
+    ],
+    "pixels": [
+      363,
+      390,
+      1272,
+      599
+    ],
+    "width": 909,
+    "height": 209,
+    "alt": "氫、氮、氖的亮線光譜與暗線光譜對照"
+  },
+  "levels-i": {
+    "path": "images/levels-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 20,
+    "box": [
+      0.546,
+      0.266,
+      0.835,
+      0.382
+    ],
+    "pixels": [
+      844,
+      577,
+      1290,
+      829
+    ],
+    "width": 446,
+    "height": 252,
+    "alt": "氫原子基態、激發態與游離能階的示意圖"
+  },
+  "orbits-i": {
+    "path": "images/orbits-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 20,
+    "box": [
+      0.151,
+      0.275,
+      0.47,
+      0.405
+    ],
+    "pixels": [
+      233,
+      596,
+      726,
+      878
+    ],
+    "width": 493,
+    "height": 282,
+    "alt": "波耳模型的 n = 1、2、3 定態軌道示意"
+  },
+  "transition-s": {
+    "path": "images/transition-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 23,
+    "box": [
+      0.123,
+      0.735,
+      0.876,
+      0.894
+    ],
+    "pixels": [
+      183,
+      1563,
+      1304,
+      1901
+    ],
+    "width": 1121,
+    "height": 338,
+    "alt": "電子吸收光子上升與放出光子下降的對照"
+  },
+  "transition-i": {
+    "path": "images/transition-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 20,
+    "box": [
+      0.193,
+      0.601,
+      0.847,
+      0.682
+    ],
+    "pixels": [
+      298,
+      1304,
+      1309,
+      1479
+    ],
+    "width": 1011,
+    "height": 175,
+    "alt": "低能階吸收與高能階發射的躍遷箭頭"
+  },
+  "balmer-l": {
+    "path": "images/balmer-l.png",
+    "version": "LIGHT",
+    "pdf": "Ch06量子現象-LIGHT講義pdf檔(教用).pdf",
+    "page": 18,
+    "box": [
+      0.17,
+      0.181,
+      0.831,
+      0.451
+    ],
+    "pixels": [
+      253,
+      385,
+      1237,
+      959
+    ],
+    "width": 984,
+    "height": 574,
+    "alt": "n = 3 至 6 躍遷到 n = 2 的可見譜線"
+  },
+  "balmer-s": {
+    "path": "images/balmer-s.png",
+    "version": "SUPER",
+    "pdf": "Ch06量子現象-SUPER講義pdf檔(教用).pdf",
+    "page": 23,
+    "box": [
+      0.441,
+      0.452,
+      0.83,
+      0.499
+    ],
+    "pixels": [
+      657,
+      961,
+      1236,
+      1061
+    ],
+    "width": 579,
+    "height": 100,
+    "alt": "656、486、434、410 nm 的氫原子譜線色帶"
+  },
+  "balmer-i": {
+    "path": "images/balmer-i.png",
+    "version": "無敵",
+    "pdf": "無敵講義第6 章 量子現象.pdf",
+    "page": 18,
+    "box": [
+      0.551,
+      0.852,
+      0.867,
+      0.921
+    ],
+    "pixels": [
+      851,
+      1848,
+      1340,
+      1998
+    ],
+    "width": 489,
+    "height": 150,
+    "alt": "氫原子約 410、434、486、656 nm 的譜線"
+  }
+}
